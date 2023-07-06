@@ -32,3 +32,26 @@ h3 {
 .container > button {
   margin-top: 10px;
 }
+
+.is-primary {
+  background: #fff !important;
+  border: 1px solid #222222 !important;
+  color: #333333 !important;
+}
+
+.is-primary:hover {
+  background: #1E1E1E !important;
+  color: #fff !important;
+}
+
+.is-danger {
+  border: 1px solid #222222 !important;
+  background: #fff !important;
+  color: #333333 !important;
+}
+
+.is-danger:hover {
+  border: 1px solid #9963AE !important;
+  background: #9963AE !important;
+  color: #fff !important;
+}
