@@ -17,12 +17,14 @@ function MoviePlaylist() {
 
   const renderedMovies = moviePlaylist.map((movie) => {
     return (
-      <li>
+      <li key={movie}>
         {movie}
         <button
           onClick={() => handleMovieRemove(movie)}
           className="button is-danger"
-        ></button>
+        >
+          X
+        </button>
       </li>
     );
   });
