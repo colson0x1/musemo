@@ -2,6 +2,7 @@ import 'bulma/css/bulma.css';
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 
+import './store';
 import App from './App';
 
 const container = document.getElementById('root');
