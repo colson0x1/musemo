@@ -1,5 +1,11 @@
+import MoviePlaylist from './components/MoviePlaylist';
+
 function App() {
-  return <h1>MuseMo</h1>;
+  return (
+    <div>
+      <MoviePlaylist />
+    </div>
+  );
 }
 
 export default App;
