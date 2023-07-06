@@ -1,3 +1,4 @@
+import './styles.css';
 import MoviePlaylist from './components/MoviePlaylist';
 import SongPlaylist from './components/SongPlaylist';
 
