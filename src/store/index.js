@@ -23,8 +23,8 @@ const store = configureStore({
 
 // @ Debugging Store
 
-const startingState = store.getState();
-console.log(JSON.stringify(startingState));
+// const startingState = store.getState();
+// console.log(JSON.stringify(startingState));
 
 /* @ manually creating an action object
 store.dispatch({
@@ -34,7 +34,9 @@ store.dispatch({
 */
 
 // dispatch an action object
-store.dispatch(songsSlice.actions.addSong('Congratulations - Post Malone'));
+// store.dispatch(songsSlice.actions.addSong('Congratulations - Post Malone'));
 
-const finalState = store.getState();
-console.log(JSON.stringify(finalState));
+// const finalState = store.getState();
+// console.log(JSON.stringify(finalState));
+
+export { store };
