@@ -5,6 +5,7 @@ const songsSlice = createSlice({
   initialState: [],
   reducers: {
     addSong(state, action) {
+      // console.log(state.length)
       state.push(action.payload);
     },
     removeSong(state, action) {
