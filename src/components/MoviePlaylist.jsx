@@ -1,4 +1,4 @@
-import { createRandomMovie } from '../data/index';
+import { createRandomMovie } from '../data';
 
 function MoviePlaylist() {
   // To Do:

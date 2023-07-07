@@ -40,3 +40,4 @@ store.dispatch({
 // console.log(JSON.stringify(finalState));
 
 export { store };
+export const { addSong } = songsSlice.actions;
