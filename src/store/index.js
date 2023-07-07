@@ -15,17 +15,26 @@ const songsSlice = createSlice({
 
 const store = configureStore({
   reducer: {
-    songs: songsSlice.reducer,
+    song: songsSlice.reducer,
   },
 });
+
+// console.log(songsSlice.actions.addSong('Ambitionz Az a Ridah - 2Pac'));
+
+// @ Debugging Store
 
 const startingState = store.getState();
 console.log(JSON.stringify(startingState));
 
+/* @ manually creating an action object
 store.dispatch({
   type: 'song/addSong',
   payload: 'Poppin Bottles - T.I, Drake',
 });
+*/
+
+// dispatch an action object
+store.dispatch(songsSlice.actions.addSong('Congratulations - Post Malone'));
 
 const finalState = store.getState();
 console.log(JSON.stringify(finalState));
