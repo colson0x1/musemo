@@ -8,7 +8,7 @@ function App() {
   const dispatch = useDispatch();
 
   const handleResetClick = () => {
-    dispatch(reset())
+    dispatch(reset());
   };
 
   return (

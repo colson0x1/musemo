@@ -12,6 +12,8 @@ const moviesSlice = createSlice({
       state.splice(index, 1);
     },
     reset(state, action) {
+      // console.log(action);
+
       // technically this works too
       // state.splice(0, 9999999) -> gives an empty array as well
       // but a little bit more canonical way is to return an empty array
@@ -34,6 +36,11 @@ const songsSlice = createSlice({
       state.splice(index, 1);
     },
   },
+  extraReducers(builder) {
+    builder.addCase('movie/reset', (state, action) => {
+      return [];
+    });
+  },
 });
 
 const store = configureStore({
@@ -43,7 +50,7 @@ const store = configureStore({
   },
 });
 
-console.log(store.getState());
+// console.log(store.getState());
 
 // console.log(songsSlice.actions.addSong('Ambitionz Az a Ridah - 2Pac'));
 
