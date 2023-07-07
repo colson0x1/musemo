@@ -11,6 +11,12 @@ const moviesSlice = createSlice({
       const index = state.indexOf(action.payload);
       state.splice(index, 1);
     },
+    reset(state, action) {
+      // technically this works too
+      // state.splice(0, 9999999) -> gives an empty array as well
+      // but a little bit more canonical way is to return an empty array
+      return [];
+    },
   },
 });
 
@@ -61,4 +67,4 @@ store.dispatch({
 
 export { store };
 export const { addSong, removeSong } = songsSlice.actions;
-export const { addMovie, removeMovie } = moviesSlice.actions;
+export const { addMovie, removeMovie, reset } = moviesSlice.actions;
