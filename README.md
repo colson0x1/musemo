@@ -51,7 +51,7 @@ This app is written with function based approach as opposed to feature based app
 ![MuseMo - Add Movie](https://i.imgur.com/8BgXQQ1.png)
 
 ### MuseMo - Add more movies and songs
-![MuseMo - Add more movies and songs](https://i.imgur.com/66itj51.png)
+![MuseMo - Add more movies and songs](https://i.imgur.com/QNbHVfa.png)
 
 ### MuseMo - Delete Individually / Reset all 
 ![MuseMo - Delete Individually / Reset all](https://i.imgur.com/Ppm5pCm.png)
